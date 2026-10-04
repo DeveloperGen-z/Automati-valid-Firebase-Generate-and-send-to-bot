@@ -1,1 +1,1 @@
-# No third-party Python packages required
+requests>=2.31.0
