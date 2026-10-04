@@ -41,7 +41,7 @@ DATA.mkdir(exist_ok=True)
 DB = DATA / "bulk.sqlite3"
 VERIFIED_FILE = DATA / "valid.txt"
 
-HOST = os.getenv("HOST", "127.0.0.1")
+HOST = os.getenv("HOST", "0.0.0.0")
 PORT = int(os.getenv("PORT", "8080"))
 WORKERS = max(1, min(16, int(os.getenv("BULK_WORKERS", "6"))))
 MAX_URLS = max(1, min(5000, int(os.getenv("BULK_MAX_URLS", "2000"))))
